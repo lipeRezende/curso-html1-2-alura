@@ -1,0 +1,203 @@
+
+body {
+    font-family: "Crimson Text", serif;
+    background-color: #F2FFFC;
+    line-height: 1.5;
+    font-size: 120%;
+}
+
+
+/* sempre generalize as regras css */
+h1,
+h2 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 30px;
+    clear: both;
+}
+
+em{
+	font-style: italic;
+}
+
+strong{
+	font-weight: bold;
+}
+
+.titulo {
+    text-align: center;
+    background-color: #851944;
+    font-size: 50px;
+    color: #FFF;
+    padding: 24px;
+    margin: 0px;
+    border-bottom: 10px solid #000;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+    margin: 20px 0;
+}
+
+main {
+    width: 85%;
+    float: left;
+}
+
+main a{
+	color: #851944;
+}
+
+/* centraliza o conteudo do box div */
+.box-centralizado {
+	width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0;
+    padding-bottom: 65px;
+}
+
+
+.post-box {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+
+.leia-mais{
+    font-size: 21px;
+    padding: 6px;
+    margin: 6px;
+    text-align: center;
+    display: block;
+    background-color: #E6E7E8;
+}
+
+.depoimentos {
+    background-color: #D9E5E3;
+    border: 10px solid #c2ccCA;
+    width: 250px;
+    margin: 20px 40px;
+    box-sizing: border-box; /* calcula automaticamente, em relacao a borda, o tamanho total do box */
+}
+.petrobras{
+    float: left;
+}
+.fiat{
+    float: right;
+}
+
+.perfil-foto{
+	position: absolute;
+	top: 0;
+    right: 0;
+}
+
+.perfil-foto,
+.navegacao {
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    box-sizing: border-box;
+}
+
+.navegacao{
+	position: absolute;
+	top: 310px;
+    right: 0px;
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    padding: 20px;
+    text-align: center;
+    clear: right;
+    width: 15%;
+}
+
+.navegacao h1{
+	margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.navegacao a{
+	color: inherit;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.navegacao li{
+    display: block;
+}
+
+
+
+.social-menu li{
+    display: inline-block;
+}
+
+.social-menu li a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.github{
+    background-image: url(../img/github.png);
+}
+
+.twitter{
+    background-image: url(../img/twitter.png);
+}
+
+.linkedin{
+    background-image: url(../img/linkedin.png);
+}
+
+/* Pagina de portifolio */
+
+.portifolio-box li {
+    display: inline-block;
+}
+
+.portifolio-box li{
+    border: 8px solid;
+    border-color: #000;
+    background-color: #fafffc;
+    padding: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 46%;
+}
+.portifolio-box img{
+    width: 100%;
+}
+
+.portifolio-box a{
+ 
+}
+
+.rodape {
+    background-color: #000;
+    color: #F2FFFC;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Triangulo com bordas, basta colocar um div vazio no footer
+footer div {
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid red;
+    border-right: 30px solid red;
+    width: 0;
+}
+*/
+
+/* sempre generalize as regras css */
+blockquote,
+footer {
+	 padding: 16px;
+}
