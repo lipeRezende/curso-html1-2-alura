@@ -31,10 +31,15 @@
     display: block;
     text-align: center;
     padding: .6em;
-    margin: 2.5em auto;
+    margin: 2.4em auto;
+}
+.secao-inicio {
+    padding: 2em;
 }
 .secao-inicio h2 {
+    font-size: 3em;
     text-transform: uppercase;
+    margin-bottom: .4em;
 }
 .trabalhos {
     background-color: #3C1D3D;
@@ -59,14 +64,24 @@
 .blog {
     background-color: #999;
     color: #FFF;
-    border-bottom: .6rem solid #851944;
+    border-bottom: .5em solid #851944;
+}
+.blog small {
+    position: relative;
+    top: -2em;
 }
 .blog li a {
     color: #FCF;
+    padding: .4em;
+    display: block;
 }
 footer {
     background-color: #000;
     color: #FFF;
+    padding: 1.5em;
+}
+footer h2{
+    font-size: 2.5em;
 }
 footer a {
     color: #F99;
