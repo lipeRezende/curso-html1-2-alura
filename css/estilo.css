@@ -2,16 +2,20 @@ body {
     font-family: "Crimson Text", serif;
     background-color: #F2FFFC;
     line-height: 1.5;
-    font-size: 110%;
+    font-size: 115%;
 }
 
 
 /* sempre generalize as regras css */
 h1,
-h2 {
+h2, 
+.subtitulo {
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 130%;
-    clear: both;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
 }
 
 em{
@@ -25,21 +29,19 @@ strong{
 .titulo {
     text-align: center;
     background-color: #851944;
-    font-size: 260%;
     color: #FFF;
     padding: 2rem;
-    border-bottom: .8rem solid #000;
-    text-transform: uppercase;
-}
-
-p {
-    text-align: justify;
-    margin: .8rem 0;
+    border-bottom: .6rem solid #000;
 }
 
 main {
     width: 85%;
     float: left;
+}
+
+main p {
+    text-align: justify;
+    margin: .8rem 0;
 }
 
 main a{
@@ -95,14 +97,14 @@ main a{
 
 .perfil-foto,
 .navegacao {
-    border-left: .8rem solid black;
-    border-bottom: .8rem solid black;
+    border-left: .6rem solid black;
+    border-bottom: .6rem solid black;
     box-sizing: border-box;
 }
 
 .navegacao{
 	position: absolute;
-	top: 310px;
+	top: 308px;
     right: 0px;
     background-color: #3C1D3D;
     color: #F2FFFC;
@@ -112,9 +114,9 @@ main a{
     width: 15%;
 }
 
-.navegacao h1{
-	margin-bottom: 1em;
-    text-transform: uppercase;
+.navegacao h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 .navegacao a{
