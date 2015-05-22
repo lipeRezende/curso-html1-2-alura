@@ -26,6 +26,9 @@ em{
 strong{
 	font-weight: bold;
 }
+header {
+  position: relative;
+}
 
 .titulo {
     text-align: center;
@@ -33,7 +36,6 @@ strong{
     color: #FFF;
     padding: 2rem;
     border-bottom: .6rem solid #000;
-    position: relative;
 }
 
 main {
