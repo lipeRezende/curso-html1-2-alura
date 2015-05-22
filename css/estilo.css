@@ -11,6 +11,7 @@ h1,
 h2, 
 .subtitulo {
     font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.5em;
 }
 
 h1 {
@@ -32,6 +33,7 @@ strong{
     color: #FFF;
     padding: 2rem;
     border-bottom: .6rem solid #000;
+    position: relative;
 }
 
 main {
