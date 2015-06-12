@@ -1,6 +1,31 @@
+.faixa-header{
+    width: 14em;
+    line-height: 1;
+    padding: 1em 0;
+    box-sizing: border-box;
+
+    text-align: center;
+    text-decoration: none;
+    background-color: #3C1D3D;
+    color: white;
+    border: .25em solid black;
+
+    font-size: 1.2em;
+    font-family: "Open Sans Condensed", sans-serif;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0 0;
+    transform: translate(6.5765em, -2.4745em) rotate(45deg);
+}
+.palavras-chave{
+     perspective: 500px;
+}
+
 .foto-home {
     height: 200px;
-    border-radius: 0 50%;
+    border-radius: 50%;
 }
 .saudacao p {
     font-size: 1.5em;
@@ -15,6 +40,12 @@
 .saudacao-ultima-linha {
     text-align: right;
     display: block;
+}
+.saudacao-ultima-linha em{
+    color: #851944;
+    font-size: 4em;
+    transform: skew(-10deg) rotate(-5deg);
+    display: inline-block;
 }
 .saudacao strong {
     color: #000;

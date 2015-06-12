@@ -8,10 +8,10 @@ body {
 
 /* sempre generalize as regras css */
 h1,
-h2, 
+h2,
 .subtitulo {
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 h1 {
@@ -202,5 +202,5 @@ footer div {
 /* sempre generalize as regras css */
 blockquote,
 footer {
-	 padding: .8em;
+	padding: .8em;
 }
