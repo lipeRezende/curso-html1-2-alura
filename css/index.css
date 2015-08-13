@@ -19,8 +19,20 @@
     transform-origin: 0 0;
     transform: translate(6.5765em, -2.4745em) rotate(45deg);
 }
+html,body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    -webkit-perspective: 6px;
+            perspective: 6px;
+    -webkit-perspective-origin: 50% 160px;
+            perspective-origin: 50% 160px;
+}
+
 .palavras-chave{
-  perspective: 6px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   position: absolute;
   top: 0;
   left: 0;
