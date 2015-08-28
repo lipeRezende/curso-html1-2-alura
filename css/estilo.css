@@ -17,6 +17,7 @@ h2,
 h1 {
     text-transform: uppercase;
     font-size: 3em;
+    text-shadow: 2px 2px #000;
 }
 
 em{
@@ -64,8 +65,14 @@ main a{
 
 .post-box {
     padding-bottom: 1em;
-    border-bottom: 1px solid #ccc;
     margin-bottom: .8em;
+    background-image: linear-gradient(to right,
+        rgba(200, 200, 200, 0),
+        rgba(200, 200, 200, 1),
+        rgba(200, 200, 200, 0));
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 
@@ -175,6 +182,7 @@ main a{
 }
 .portifolio-box img{
     width: 100%;
+    box-shadow: 0 0 4px #000;
 }
 
 .portifolio-box a{
@@ -182,12 +190,21 @@ main a{
 }
 
 .rodape {
-    background-color: #000;
+    background-image: radial-gradient(ellipse at left bottom,
+    rgba(60, 29, 61, 0.8),
+    rgba(60, 29, 61, 0.8) 65%,
+    black 65%,
+    black 70%,
+    transparent 70%,
+    transparent);
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
     color: #F2FFFC;
     clear: both;
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-shadow: black 1px 1px 1px;
 }
 /* Triangulo com bordas, basta colocar um div vazio no footer
 footer div {
@@ -204,3 +221,13 @@ blockquote,
 footer {
 	padding: .8em;
 }
+
+/* Exemplo de gradiente
+min-height: 100%;
+background-color: black;
+background-image: linear-gradient(to right, black, #C00, black);
+background-repeat: no-repeat;
+background-size: 80% 5px;
+background-position: 50% 50%;
+Use: http://dabblet.com/gist/a49c6685fd643c6e4caf;
+*/
