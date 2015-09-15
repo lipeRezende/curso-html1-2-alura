@@ -62,6 +62,15 @@ main a{
     padding-bottom: 65px;
 }
 
+.bio > p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: #3C1D3D;
+  text-shadow: 1px 1px #000;
+  margin-right: .2ch;
+  line-height: 1;
+}
+
 .post-box + .post-box {
   /* trocamos padding-bottom e margin-bottom por
      padding-top e margin-top */
@@ -90,6 +99,18 @@ main a{
     padding: .8em;
     margin: .8em 1.5em;
     box-sizing: border-box; /* calcula automaticamente, em relacao a borda, o tamanho total do box */
+}
+
+.depoimentos p{
+    position: relative;
+}
+
+blockquote::before{
+    content: '“';
+    font-size: 8em;
+    position: absolute;
+    color: #bbb;
+    line-height: .8;
 }
 
 blockquote:nth-of-type(odd){
@@ -168,6 +189,34 @@ blockquote:nth-of-type(even){
     height: 40px;
     display: block;
     text-indent: -9999px;
+}
+
+.social-menu a {
+  position: relative;
+}
+
+.social-menu a:hover::after,
+.social-menu a:focus::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  text-indent: 0;
+  width: 300%;
+  background: black;
+  font-size: .75em;
+}
+
+.social-menu a:hover::before,
+.social-menu a:focus::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    transform: translateY(.5em) rotate(45deg);
 }
 
 .github{
