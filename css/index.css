@@ -158,6 +158,29 @@ body {
     display: block;
 }
 
+.blog .inicio-post {
+    position: absolute;
+    top: 4em;
+    height: 8em;
+    left: 30%;
+    right: 4em;
+    background-color: #F2FFFC;
+    color: #000;
+    padding: 1.5em;
+    display: none;
+}
+
+.blog ol a:hover + .inicio-post,
+.blog ol a:focus + .inicio-post {
+    display: block;
+}
+
+.blog ol a:hover,
+.blog ol a:focus {
+    background-color: #F2FFFC;
+    color: #F26;
+}
+
 .ultimo-post{
     background-color: #F2FFFC;
 
@@ -194,6 +217,13 @@ main {
     width: 100%;
     padding-bottom: 0;
     float: none;
+}
+
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus {
+  color: red;
 }
 
 .palavra-home {

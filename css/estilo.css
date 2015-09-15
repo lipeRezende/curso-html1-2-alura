@@ -91,11 +91,25 @@ main a{
     margin: .8em 1.5em;
     box-sizing: border-box; /* calcula automaticamente, em relacao a borda, o tamanho total do box */
 }
-.petrobras{
+
+blockquote:nth-of-type(odd){
+    float: right;
+}
+
+blockquote:nth-of-type(even){
     float: left;
 }
-.fiat{
-    float: right;
+
+.depoimentos:hover{
+    transform: rotate(5deg) scale(1.2); 
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+}
+
+.depoimentos:focus{
+    transform: rotate(5deg) scale(1.2); 
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+    z-index: 9999;
 }
 
 .perfil-foto{
@@ -138,6 +152,12 @@ main a{
 .navegacao li{
     display: block;
 }
+
+.navegacao a:hover,
+.navegacao a:focus {
+  text-shadow: 0 0 2px pink;
+}
+
 
 .social-menu li{
     display: inline-block;
