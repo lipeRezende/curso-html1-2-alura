@@ -6,6 +6,58 @@ label[for="mensagem"] {
   margin-top: 1em;
 }
 
+label[for="nome"] {
+  position: relative;
+}
+
+/*Como queremos inserir os ícones via CSS, precisamos usar um pseudoelemento para eles. 
+Seguindo a dica do enunciado, vamos fazer usando um pseudoelemento da <label>, 
+o ::after por exemplo. Podemos colocar os ícones nele como imagens de fundo:*/
+label[for="nome"]:after {
+  content: ""; /* não podemos esquecer do content! */
+  background-color: #851944;
+  background-repeat: no-repeat;
+  background-image: url(../img/usuario.png);
+  background-size: 50% 50%;
+  width: 2em;
+  height: 2em;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+#nome {
+  width: calc(100% - 2em);
+  position: relative;
+  left: 2em;
+}
+
+label[for="email"] {
+  position: relative;
+}
+
+label[for="email"]:after {
+  content: ""; /* não podemos esquecer do content! */
+  background-color: #851944;
+  background-repeat: no-repeat;
+  background-image: url(../img/email.png);
+  background-size: 50% 50%;
+  width: 2em;
+  height: 2em;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+#email {
+  width: calc(100% - 2em);
+  position: relative;
+  left: 2em;
+}    
+
+
 /* As tags <label> que têm o atributo "for" são
    os rótulos dos campos sem ser os assuntos */
 label[for],

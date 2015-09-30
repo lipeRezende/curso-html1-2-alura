@@ -40,7 +40,9 @@ header {
 }
 
 main {
-    width: 85%;
+    /*Sendo assim, para que a parte principal ocupe o resto da tela, dizemos que queremos a largura total 
+    da tela menos essa largura que acabamos de definir para a barra lateral. Ou seja:*/
+    width: calc(100% - 0.9 * 300px);
     float: left;
 }
 
@@ -155,7 +157,9 @@ blockquote:nth-of-type(even){
     padding: 1em;
     text-align: center;
     clear: right;
-    width: 15%;
+    /*Para que a barra lateral tenha sempre 90% da largura da foto, que tem 300 pixels de altura, 
+    podemos definir a largura dela com calc(), deixando explícita essa relação:*/
+    width: calc(0.9 * 300px);
 }
 
 .navegacao h1 {
