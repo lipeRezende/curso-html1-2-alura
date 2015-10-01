@@ -260,6 +260,34 @@ blockquote:nth-of-type(even){
  
 }
 
+table {
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+thead th {
+    background-color: #3C1D3D;
+    color: #fff;
+}
+tbody th {
+    background-color: #851944;
+    color: #fff;
+}
+th {
+    padding: .8em;
+
+}
+td {
+    padding: .8em;
+    background-color: #eee;
+}
+td[rowspan]{
+    vertical-align: middle;
+}
+td[colspan]{
+    text-align: center;
+    font-style: italic;
+}
+
 .rodape {
     background-image: radial-gradient(ellipse at left bottom,
     rgba(60, 29, 61, 0.8),
