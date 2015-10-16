@@ -101,6 +101,8 @@ main a{
     padding: .8em;
     margin: .8em 1.5em;
     box-sizing: border-box; /* calcula automaticamente, em relacao a borda, o tamanho total do box */
+    transition: box-shadow 1s, transform 1s; /* Qualquer alteração vai ter uma transição de 1s */
+    transition-delay: 1s, 0s;
 }
 
 .depoimentos p{
@@ -127,6 +129,7 @@ blockquote:nth-of-type(even){
     transform: rotate(5deg) scale(1.2); 
     box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
     z-index: 9999;
+    transition-delay: 0s, 1s;
 }
 
 .depoimentos:focus{
